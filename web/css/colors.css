@@ -1,0 +1,49 @@
+/* Colores usados en layout.css */
+
+.topbar {
+  background-color:#bfa2ff
+}
+
+.projects-section {
+  background-color: #fafafa;
+}
+
+.section-title {
+  color: #5a2a82;
+}
+
+.contact-text {
+  color: #333;
+}
+
+.btn-submit {
+  background-color: #5a2a82;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #7e52b8;
+}
+
+.footer {
+  background-color: #222;
+  color: #eee;
+}
+
+.footer-section h3 {
+  color: #7e52b8;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section li {
+  color: #ccc;
+}
+
+.footer-section a:hover {
+  color: #bfa2ff;
+}
+
+.footer-bottom {
+  color: #555;
+}

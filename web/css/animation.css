@@ -1,0 +1,23 @@
+.my-text {
+  display: inline-block; /* needed for transform */
+  transition: transform 0.3s ease;
+}
+
+.my-text:hover {
+  transform: scale(1.05);
+}
+
+/* Animaciones y transiciones */
+
+.project-card img {
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.btn-submit {
+  transition: background-color 0.3s ease;
+}
+

@@ -1,0 +1,75 @@
+/* Fuentes y tamaños */
+
+body {
+  font-family: 'EB Garamond', serif;
+}
+
+.topbar {
+  font-weight: 150;
+  font-size: 30px;
+}
+
+.topbar .logo {
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+
+.career {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* por ejemplo */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+}
+
+.btn-submit {
+  font-weight: 600;
+}
+
+.footer-section h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.footer-section p,
+.footer-section a,
+.footer-section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+}
