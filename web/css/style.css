@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+#loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.progress-container {
+  width: 60%;
+  background: #eee;
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: purple;
+  transition: width 0.2s ease;
+}
+
+.progress-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  line-height: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.animationLoader{
+    animation: loaderan;
+    animation-duration: 3s;
+}
+
+@keyframes loaderan {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
