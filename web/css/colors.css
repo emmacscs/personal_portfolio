@@ -1,11 +1,15 @@
 /* Colores usados en layout.css */
 
 .topbar {
-  background-color:#bfa2ff
+  background-color:#151840
 }
 
 .projects-section {
   background-color: #fafafa;
+}
+
+.my-text{
+  color: #908ced;
 }
 
 .section-title {
