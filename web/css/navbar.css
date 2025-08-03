@@ -13,6 +13,9 @@ body, html {
   background-color: #151840;
   z-index: 999;
   animation: slideUpNavbar 1.5s ease-in-out 4s forwards;
+
+    /* Make sure to preserve smooth edges */
+  will-change: height, border-radius;
 }
 
 @keyframes slideUpNavbar {
@@ -23,21 +26,10 @@ body, html {
   100% {
     top: 0;
     height: 140px; /* becomes navbar height */
+
+     border-bottom-left-radius: 60px;  /* Half the height */
+     border-bottom-right-radius: 60px;
   }
 }
 
 
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 140px;
-  background-color: #6c5ce7;
-  z-index: 998;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: white;
-}

@@ -59,7 +59,7 @@ body, html {
   margin-left: 65px;
   transform-origin: -65px center;
 
-  animation: spinMove 3s ease forwards;
+  animation: spinMove 3s ease 0.2s forwards;
 }
 
 @keyframes spinMove {
