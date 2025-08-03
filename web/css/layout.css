@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 /* Layout y posicionamientos */
@@ -51,7 +52,7 @@ body {
 
 
 .main-content {
-  position: relative;
+  position: sticky;
   z-index: 1;
   flex-grow: 1;
   display: flex;
