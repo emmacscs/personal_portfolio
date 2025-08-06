@@ -30,3 +30,37 @@ body, html {
 }
 
 
+/* navbar.css */
+
+.navbar-content {
+  height: 90px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  animation: fadeInAfterDelay 1s ease forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeInAfterDelay {
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-content div {
+  padding: 10px 15px;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
