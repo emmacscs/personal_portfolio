@@ -26,7 +26,7 @@ body, html {
 
 @keyframes loaderSlideUp {
   to {
-    top: 50px; /* Near top navbar */
+    top: 30px; /* Near top navbar */
     width: 40px;
     height: 40px;
     transform: translate(-50%, 0); /* Align vertically without vertical offset */
@@ -38,18 +38,18 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 60px;
-  border-left: 10px solid #9d8ced;
-  border-top: 10px solid #9d8ced;
-  border-bottom: 10px solid #9d8ced;
+  width: 25px;
+  height: 45px;
+  border-left: 9px solid #9d8ced;
+  border-top: 9px solid #9d8ced;
+  border-bottom: 9px solid #9d8ced;
   border-radius: 4px;
 }
 
 .circle {
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 13px;
+  height: 13px;
   background-color: #9d8ced;
   border-radius: 50%;
 
@@ -57,15 +57,15 @@ body, html {
   left: 50%;
 
   margin-left: 65px;
-  transform-origin: -65px center;
-
-  animation: spinMove 3s ease 0.2s forwards;
+  transform-origin: -70px center;
+  animation: spinMove 3s ease 0.1s forwards;
 }
 
 @keyframes spinMove {
   0% {
     transform: rotate(0deg) translateX(0) translateY(-5px);
   }
+  50%
   100% {
     transform: rotate(360deg) translateX(-67px) translateY(-10px);
   }
