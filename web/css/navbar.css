@@ -43,6 +43,7 @@ body, html {
   animation-delay: 3s;
 }
 
+
 @keyframes fadeInAfterDelay {
   to {
     opacity: 1;
