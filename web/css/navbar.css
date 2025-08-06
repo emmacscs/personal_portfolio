@@ -12,7 +12,7 @@ body, html {
   height: 100vh;
   background-color: #151840;
   z-index: 999;
-  animation: slideUpNavbar 1.5s ease-in-out 4s forwards;
+  animation: slideUpNavbar 1.5s ease-in-out 2.1s forwards;
 
     /* Make sure to preserve smooth edges */
   will-change: height, border-radius;
@@ -26,9 +26,6 @@ body, html {
   100% {
     top: 0;
     height: 100px; /* becomes navbar height */
-
-     border-bottom-left-radius: 60px;  /* Half the height */
-     border-bottom-right-radius: 60px;
   }
 }
 
