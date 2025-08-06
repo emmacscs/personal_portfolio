@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+
+/* FOR ALL ELEMENTS WITH THIS ZOOM EFFECT */
+
+.zoom {
+  transition: transform 0.2s ease; /* Smoother */
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}

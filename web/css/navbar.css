@@ -1,9 +1,6 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
+
+ /* NAVBAR OVERLAY */
 .overlay-navbar {
   position: fixed;
   top: 0;
@@ -13,8 +10,6 @@ body, html {
   background-color: #151840;
   z-index: 999;
   animation: slideUpNavbar 1.5s ease-in-out 2.1s forwards;
-
-    /* Make sure to preserve smooth edges */
   will-change: height, border-radius;
 }
 
@@ -30,7 +25,8 @@ body, html {
 }
 
 
-/* navbar.css */
+
+ /* CONTENT OF NAVBAR */
 
 .navbar-content {
   height: 90px;
@@ -61,7 +57,12 @@ body, html {
   color: white;
   border-radius: 6px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
+
+  font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
 
