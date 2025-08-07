@@ -43,7 +43,7 @@
 
 /* Each animated item */
 .wrapper .initial-content ol li {
-  animation: slide-up 6s linear infinite;
+  animation: slide-up 6s linear infinite forwards 2.5s;
   position: relative;
 }
 
@@ -71,11 +71,7 @@
 }
 
 /* Slide-up animation */
-@keyframes slide-up {
-  0%   { transform: translateY(0%); }
-  20%  { transform: translateY(-100%); }
-  40%  { transform: translateY(-200%); }
-  60%  { transform: translateY(-300%); }
-  80%  { transform: translateY(-400%); }
-  100% { transform: translateY(0%); }
-}
+  @keyframes slide-up {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-500%); }
+  }
