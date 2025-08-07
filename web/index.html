@@ -21,9 +21,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- Mi cursor -->
+    <style>
+        *{
+        cursor: url('images/cursor1.svg') 16 16, auto;
+        }
+    </style>
+
 </head>
 
 <body>
+
+
 
     <!-- Preloader section -->
 
@@ -33,6 +42,12 @@
       <div class="circle"></div>
     </div>
     </div>
+
+    <!-- Video fondo section -->
+    <video autoplay muted loop id="background-video">
+        <source src="C:\Users\emmxc\IdeaProjects\personal_portfolio\web\images\istockphoto-1301033317-640_adpp_is.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
 
     <!-- Navbar section -->
     <div class="overlay-navbar">
@@ -54,17 +69,23 @@
 
     <!-- Initial section -->
     <div class="wrapper">
-        <h1 class="initial-content ">
-            Let's learn
+        <h1 class="initial-content">
+            <span class="word zoom">H</span><span class="word zoom">i</span><span class="word zoom">,</span><span class="word zoom"> </span>
+            <span class="word zoom">I</span><span class="word zoom">'</span><span class="word zoom">m</span><span class="word zoom"> </span>
+            <span class="word zoom">E</span><span class="word zoom">m</span><span class="word zoom">m</span><span class="word zoom">a</span><span class="word zoom"> </span>
+            <span class="word zoom">C</span><span class="word zoom">a</span><span class="word zoom">l</span><span class="word zoom">v</span><span class="word zoom">i</span><span class="word zoom">n</span><span class="word zoom">o</span>
+
             <ol>
-                <li><span> UI / UX Design </span></li>
-                <li><span> Coding </span></li>
-                <li><span> Data Science </span></li>
-                <li><span> Web development </span></li>
+                <li><span>UI / UX Designer</span></li>
+                <li><span>Coding</span></li>
+                <li><span>Data Scientist</span></li>
+                <li><span>Web developer</span></li>
+                <li><span>App deployer</span></li>
+
             </ol>
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis minus molestias, quibusdam quidem rem voluptatem.</p>
-        <button>Get started</button>
+        <p class="zoom">This is my personal portfolio. Scroll to find out everything about me!</p>
+        <button class="zoom">Get started</button>
     </div>
 
 
