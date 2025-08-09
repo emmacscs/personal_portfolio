@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/initialcontent.css">
     <link rel="stylesheet" href="css/motive.css">
+     <link rel="stylesheet" href="css/projects.css">
 
     <!-- Mi icono -->
     <link rel="icon" href="images/icono.png" type="image/png">
@@ -46,7 +47,7 @@
 
     <!-- Video fondo section -->
     <video autoplay muted loop id="background-video">
-        <source src="C:\Users\emmxc\IdeaProjects\personal_portfolio\web\images\istockphoto-1301033317-640_adpp_is.mp4" type="video/mp4">
+        <source src="C:\Users\emmxc\Documents\GitHub\personal_portfolio\web\images\backgroundvid.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
     </video>
 
@@ -67,43 +68,139 @@
         </nav>
     </div>
 
-
     <!-- Initial section -->
-    <div class="section wrapper">
-        <h1 class="initial-content">
-            <span class="word zoom">H</span><span class="word zoom">i</span><span class="word zoom">,</span><span class="word zoom"> </span>
-            <span class="word zoom">I</span><span class="word zoom">'</span><span class="word zoom">m</span><span class="word zoom"> </span>
-            <span class="word zoom">E</span><span class="word zoom">m</span><span class="word zoom">m</span><span class="word zoom">a</span><span class="word zoom"> </span>
-            <span class="word zoom">C</span><span class="word zoom">a</span><span class="word zoom">l</span><span class="word zoom">v</span><span class="word zoom">i</span><span class="word zoom">n</span><span class="word zoom">o</span>
 
-            <ol>
-                <li><span>Artificial Intelligence</span></li>
-                <li><span>Data Science</span></li>
-                <li><span>UI / UX Design</span></li>
-                <li><span>Web Development</span></li>
-                <li><span>Open to learn</span></li>
 
-                <li><span>Artificial Intelligence</span></li>
-                <li><span>Data Science</span></li>
-                <li><span>UI / UX Design</span></li>
-                <li><span>Web Development</span></li>
-                <li><span>Open to learn</span></li>
+    <section class="section section1">
+        <div class="wrapper">
+            <h1 class="initial-content">
+                <span class="word zoom">H</span><span class="word zoom">i</span><span class="word zoom">,</span><span class="word zoom"> </span>
+                <span class="word zoom">I</span><span class="word zoom">'</span><span class="word zoom">m</span><span class="word zoom"> </span>
+                <span class="word zoom">E</span><span class="word zoom">m</span><span class="word zoom">m</span><span class="word zoom">a</span><span class="word zoom"> </span>
+                <span class="word zoom">C</span><span class="word zoom">a</span><span class="word zoom">l</span><span class="word zoom">v</span><span class="word zoom">i</span><span class="word zoom">n</span><span class="word zoom">o</span>
 
-            </ol>
-        </h1>
-        <p class="zoom">This is my personal portfolio. Scroll to find out everything about me!</p>
-        <button  id="scrollButton" class="zoom">Get started</button>
-    </div>
+                <ol>
+                    <li><span>Artificial Intelligence</span></li>
+                    <li><span>Data Science</span></li>
+                    <li><span>UI / UX Design</span></li>
+                    <li><span>Web Development</span></li>
+                    <li><span>Open to learn</span></li>
+
+                    <li><span>Artificial Intelligence</span></li>
+                    <li><span>Data Science</span></li>
+                    <li><span>UI / UX Design</span></li>
+                    <li><span>Web Development</span></li>
+                    <li><span>Open to learn</span></li>
+
+                </ol>
+            </h1>
+            <p class="zoom">This is my personal portfolio. Scroll to find out everything about me!</p>
+            <button  id="scrollButton" class="zoom">Get started</button>
+        </div>
+    </section>
 
 
 
     <!-- About me section -->
-    <div class="section section-2" id="secondSection">
-        <h1>Hello Section 2 </h1>
-    </div>
+    <section class="section section2 autoShow" id="secondSection">
+        <div class="about-me-container">
+
+            <!-- Left: Photo -->
+            <div class="about-photo autoShow">
+                <img src="images/emma%20picture.jpg" alt="My Photo" />
+            </div>
+
+            <!-- Right: Text + Button -->
+            <div class="about-content autoShow">
+                <h1 class>Some insights about me</h1>
+                <p>
+                    I’m passionate about AI, data science, and designing thoughtful user experiences.
+                    Learn more about me or grab my CV!
+                </p>
+                <a href="images/document.devis-CALVINO-EMMA-5741252.pdf" class="cv-button" target="_blank">Get CV</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills passing banner -->
+
+    <div class="scroller autoShow" data-speed="fast">
+  <ul class="tag-list scroller__inner">
+        <li class="zoom">Python</li>
+        <li class="zoom">Java</li>
+        <li class="zoom">MySQL</li>
+        <li class="zoom">Html</li>
+        <li class="zoom">JavaScript</li>
+        <li class="zoom">Css</li>
+        <li class="zoom">R</li>
+        <li class="zoom">Matlab</li>
+
+        <li class="zoom">Python</li>
+        <li class="zoom">Java</li>
+        <li class="zoom">MySQL</li>
+        <li class="zoom">Html</li>
+        <li class="zoom">JavaScript</li>
+        <li class="zoom">Css</li>
+        <li class="zoom">R</li>
+        <li class="zoom">Matlab</li>
+  </ul>
+</div>
+
 
 
     <!-- Projects section -->
+
+    <section class="section sectionProjects autoShow">
+        <div class="carousel next">
+            <div class="list">
+                <div class="item">
+                    <img src="images/astronaut.jpg">
+                    <div class="content">
+                        <div class="name">Group Projects</div>
+                        <div class="time">University</div>
+                        <div class="topic">physics</div>
+                        <div class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore officia labore eligendi consequuntur nisi, dolorum corrupti expedita nemo sed sint quisquam neque animi reiciendis, magnam repudiandae minima inventore minus illo!</div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <img src="images/astronaut.jpg">
+                    <div class="content">
+                        <div class="name">Bachelor's Thesis</div>
+                        <div class="time">University</div>
+                        <div class="topic">thesis</div>
+                        <div class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore officia labore eligendi consequuntur nisi, dolorum corrupti expedita nemo sed sint quisquam neque animi reiciendis, magnam repudiandae minima inventore minus illo!</div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+         <!-- thumbnail images -->
+          <div class="thumbnail">
+            <div class="item">
+                <img src="images/diabetes.jpg">
+                <div class="content">
+                    <div class="title">Name </div>
+                    <div class="des">description</div>
+                </div>
+            </div>
+          </div>
+
+          <!-- arrows -->
+           <div class="arrows">
+            <button class= "zoom" id="prev"><</button>
+            <button class= "zoom" id="next">></button>
+           </div>
+
+        </div>
+    </section>
 
 
     <!-- Contact me section -->
@@ -114,6 +211,8 @@
 
 </body>
 
-<script src="js/script.js"></script>
+<script src="js/scrollerscript.js"></script>
+
+<script src="js/gallery.js"></script>
 
 </html>

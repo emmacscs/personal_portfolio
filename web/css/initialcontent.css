@@ -50,7 +50,7 @@
 /* Gradient text effect */
 .wrapper .initial-content ol li span {
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(20deg, #151840, #9d8ced);
+  background: linear-gradient(20deg, #9d8ced, #2ECCB0);
   -webkit-background-clip: text;
   white-space: nowrap;
 }

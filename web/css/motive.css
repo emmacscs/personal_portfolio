@@ -1,4 +1,136 @@
-.section-2 {
-  position: relative;
-  background: white;
+.section2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.about-me-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap; /* Responsive */
+}
+
+.about-photo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 350px;
+  transition: transform 0.2s ease;
+}
+
+.about-photo img:hover{
+  
+  box-shadow: 0 0 10px #151840;
+  transform:scale(1.04);
+}
+
+.about-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-content h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #9d8ced;
+
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+
+}
+
+.cv-button:hover {
+  background-color: #2ECCB0;
+  box-shadow: 0 0 10px #151840;
+  transform:scale(1.04);
+}
+
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: transparent;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem #151840;
+}
+
+
+
+.scroller {
+  max-width: 2000px;
+  /* background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: 2000px;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 25s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
 }
