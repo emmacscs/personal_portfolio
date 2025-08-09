@@ -1,0 +1,57 @@
+/* contact.css */
+
+#contact {
+  padding: 3rem 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Lexend', sans-serif;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+#contact p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  resize: vertical; /* textarea only */
+}
+
+#contact textarea {
+  resize: vertical;
+}
+
+#contact button[type="submit"] {
+  padding: 12px;
+  font-weight: 600;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: inherit;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #0056b3;
+}

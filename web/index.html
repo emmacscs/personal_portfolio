@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/initialcontent.css">
     <link rel="stylesheet" href="css/motive.css">
      <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!-- Mi icono -->
     <link rel="icon" href="images/icono.png" type="image/png">
@@ -55,15 +57,14 @@
     <div class="overlay-navbar">
         <nav class="navbar-content" style="opacity: 0;">
             <!-- Left corner -->
-            <div class="nav-left">
-                <div class="section-a zoom">About Me</div>
-                <div class="section-b zoom">Projects</div>
+            <div class="nav-left">  
             </div>
 
             <!-- Right corner -->
             <div class="nav-right">
-                <div class="section-c zoom">Experience</div>
-                <div class="section-d zoom">Contact me</div>
+                <div class="section-a zoom">About Me</div>
+                <div class="section-b zoom">Projects</div>
+                <div class="section-c zoom">Contact me</div>
             </div>
         </nav>
     </div>
@@ -103,6 +104,9 @@
 
     <!-- About me section -->
     <section class="section section2 autoShow" id="secondSection">
+
+
+        
         <div class="about-me-container">
 
             <!-- Left: Photo -->
@@ -125,7 +129,7 @@
 
     <!-- Skills passing banner -->
 
-    <div class="scroller autoShow" data-speed="fast">
+    <div class="scroller" data-speed="fast">
   <ul class="tag-list scroller__inner">
         <li class="zoom">Python</li>
         <li class="zoom">Java</li>
@@ -152,61 +156,84 @@
     <!-- Projects section -->
 
     <section class="section sectionProjects autoShow">
-        <div class="carousel next">
-            <div class="list">
-                <div class="item">
-                    <img src="images/astronaut.jpg">
-                    <div class="content">
-                        <div class="name">Group Projects</div>
-                        <div class="time">University</div>
-                        <div class="topic">physics</div>
-                        <div class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore officia labore eligendi consequuntur nisi, dolorum corrupti expedita nemo sed sint quisquam neque animi reiciendis, magnam repudiandae minima inventore minus illo!</div>
-                        <div class="buttons">
-                            <button>SEE MORE</button>
-                            <button>SUBSCRIBE</button>
-                        </div>
-                    </div>
-                </div>
-                 <div class="item">
-                    <img src="images/astronaut.jpg">
-                    <div class="content">
-                        <div class="name">Bachelor's Thesis</div>
-                        <div class="time">University</div>
-                        <div class="topic">thesis</div>
-                        <div class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore officia labore eligendi consequuntur nisi, dolorum corrupti expedita nemo sed sint quisquam neque animi reiciendis, magnam repudiandae minima inventore minus illo!</div>
-                        <div class="buttons">
-                            <button>SEE MORE</button>
-                            <button>SUBSCRIBE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-         <!-- thumbnail images -->
-          <div class="thumbnail">
-            <div class="item">
-                <img src="images/diabetes.jpg">
-                <div class="content">
-                    <div class="title">Name </div>
-                    <div class="des">description</div>
-                </div>
-            </div>
-          </div>
 
-          <!-- arrows -->
-           <div class="arrows">
-            <button class= "zoom" id="prev"><</button>
-            <button class= "zoom" id="next">></button>
-           </div>
-
+        <div class="projectTitle">
+            <h1 class="autoShow zoom">What have I been up to?</h1>
         </div>
+
+      <div class="card-group autoShow">
+        <div class="card">
+             <img src="images/astronaut.jpg" >
+            <div class="layer">
+                <div class="info">
+                    <h1>Group work</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
+                    <button class="zoom" >Explore</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+             <img src="images/diabetes.jpg" >
+            <div class="layer">
+                <div class="info">
+                    <h1>Bachelors Thesis</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
+                    <button class="zoom" >Explore</button>
+                </div>
+            </div>
+        </div>
+         <div class="card">
+             <img src="images/astronaut.jpg" >
+            <div class="layer">
+                <div class="info">
+                    <h1>Group work</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
+                    <button class="zoom" >Explore</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+             <img src="images/emma picture.jpg" >
+            <div class="layer">
+                <div class="info">
+                    <h1>Personal Projects</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
+                    <button class="zoom">Explore</button>
+                </div>
+            </div>
+        </div>
+       
+      </div>
     </section>
 
 
     <!-- Contact me section -->
+      
+    <section class= "section autoShow" id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            I’d love to hear from you! Whether you have a question, project idea, or just want to say hi, drop me a message below.
+        </p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
 
     <!-- Footer section -->
+
+   <footer>
+        <p>© 2025 Your Name. All rights reserved.</p>
+        <p>
+            <a href="#contact">Contact</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Use</a>
+        </p>
+    </footer>
+
 
 
 </body>

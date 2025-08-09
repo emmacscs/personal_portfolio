@@ -1,0 +1,28 @@
+/* footer.css */
+
+footer {
+  background-color: #151840;
+  color: #eee;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p + p {
+  margin-top: 0.5rem;
+}
+
+footer a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #007BFF;
+}

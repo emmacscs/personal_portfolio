@@ -45,7 +45,7 @@ z-index: 1;
 
 .autoShow{
     animation: autoShowAnimation;
-    animation-timeline:view( auto);
+    animation-timeline:view(80% auto);
 }
 
 @keyframes autoShowAnimation{
