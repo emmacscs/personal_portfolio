@@ -1,6 +1,5 @@
 .section2 {
   background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
   position:relative;
   align-items: center;
   justify-content: center;
@@ -74,9 +73,11 @@
 }
 
 .tag-list li {
-  padding: 1rem;
+  padding: 3rem;
+  font-size: 30px;
   background: transparent;
   border-radius: 0.7rem;
+  height: 50px;
   box-shadow: 0 0.5rem 1rem -0.25rem #151840;
 }
 
@@ -85,7 +86,7 @@
 .scroller {
   max-width: 2000px;
   /* background-color: rgba(255, 255, 255, 0.5);*/
-  height: 200px;
+  height: 400px;
 }
 
 .scroller__inner {

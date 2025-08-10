@@ -4,7 +4,6 @@
   padding: 3rem 1rem;
   max-width: 600px;
   margin: 0 auto;
-  font-family: 'Lexend', sans-serif;
 }
 
 #contact h2 {
@@ -30,9 +29,13 @@
 #contact textarea {
   padding: 10px;
   font-size: 1rem;
+    font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+  font-size: medium;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-family: inherit;
   resize: vertical; /* textarea only */
 }
 
@@ -42,16 +45,19 @@
 
 #contact button[type="submit"] {
   padding: 12px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+  font-size: medium;
   font-weight: 600;
-  background-color: #007BFF;
-  color: white;
+  background-color: #9d8ced;
+  color: black;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   transition: background-color 0.3s;
-  font-family: inherit;
 }
 
 #contact button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #2ECCB0;
 }

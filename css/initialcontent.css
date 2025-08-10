@@ -11,8 +11,7 @@
 
 /* Big initial heading */
 .wrapper .initial-content {
-  font-family: "Lexend", sans-serif;
-  font-weight: 400;
+  
   font-size: 100px;
   line-height: 1.2;
   margin-bottom: 2rem;
@@ -21,9 +20,6 @@
 /* Paragraph with less horizontal constraint */
 .wrapper p {
   margin: 0 auto 1.5rem;
-  font-family: "Lexend", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
   line-height: 1.8;
   max-width: 100%; /* allow full width */
 }
@@ -36,8 +32,6 @@
   height: 4.5rem;
   line-height: 4.5rem;
   overflow: hidden;
-  font-family: "Lexend", sans-serif;
-  font-weight: 300;
   font-size: 36px;
 }
 
@@ -60,9 +54,7 @@
   padding: 1rem 2rem;
   border: none;
   border-radius: 2rem;
-  font-family: "Lexend", sans-serif;
   font-size: 1.2rem;
-  font-weight: 500;
   margin-top: 1rem;
 }
 

@@ -45,7 +45,7 @@ z-index: 1;
 
 .autoShow{
     animation: autoShowAnimation;
-    animation-timeline:view(80% auto);
+    animation-timeline:view(0% auto);
 }
 
 @keyframes autoShowAnimation{
@@ -57,4 +57,29 @@ z-index: 1;
     opacity:1;
     transform: translateY(0) scale(1);
     }
+}
+
+
+/*FONT*/
+
+.textTitles{
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  font-style: normal;
+}
+
+.textSubtitles{
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.textBlocks{
+ font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+
 }

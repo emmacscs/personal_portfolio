@@ -24,8 +24,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&family=Slabo+27px&display=swap" rel="stylesheet">
+        
 
-    <!-- Mi cursor -->
+<!-- Mi cursor -->
     <style>
         *{
         cursor: url('images/cursor1.svg') 16 16, auto;
@@ -49,7 +54,7 @@
 
     <!-- Video fondo section -->
     <video autoplay muted loop id="background-video">
-        <source src="C:\Users\emmxc\Documents\GitHub\personal_portfolio\images\backgroundvid.mp4" type="video/mp4">
+        <source src="backgroundvid.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
     </video>
 
@@ -62,9 +67,9 @@
 
             <!-- Right corner -->
             <div class="nav-right">
-                <div class="section-a zoom">About Me</div>
-                <div class="section-b zoom">Projects</div>
-                <div class="section-c zoom">Contact me</div>
+                <div class="section-a zoom textSubtitles">About Me</div>
+                <div class="section-b zoom textSubtitles">Projects</div>
+                <div class="section-c zoom textSubtitles">Contact me</div>
             </div>
         </nav>
     </div>
@@ -74,11 +79,11 @@
 
     <section class="section section1">
         <div class="wrapper">
-            <h1 class="initial-content">
-                <span class="word zoom">H</span><span class="word zoom">i</span><span class="word zoom">,</span><span class="word zoom"> </span>
-                <span class="word zoom">I</span><span class="word zoom">'</span><span class="word zoom">m</span><span class="word zoom"> </span>
-                <span class="word zoom">E</span><span class="word zoom">m</span><span class="word zoom">m</span><span class="word zoom">a</span><span class="word zoom"> </span>
-                <span class="word zoom">C</span><span class="word zoom">a</span><span class="word zoom">l</span><span class="word zoom">v</span><span class="word zoom">i</span><span class="word zoom">n</span><span class="word zoom">o</span>
+            <h1 class="initial-content textTitles">
+                <span class="word zoom ">H</span><span class="word zoom ">i</span><span class="word zoom ">,</span><span class="word zoom "> </span>
+                <span class="word zoom ">I</span><span class="word zoom ">'</span><span class="word zoom ">m</span><span class="word zoom "> </span>
+                <span class="word zoom ">E</span><span class="word zoom ">m</span><span class="word zoom ">m</span><span class="word zoom ">a</span><span class="word zoom "> </span>
+                <span class="word zoom ">C</span><span class="word zoom ">a</span><span class="word zoom ">l</span><span class="word zoom ">v</span><span class="word zoom ">i</span><span class="word zoom">n</span><span class="word zoom">o</span>
 
                 <ol>
                     <li><span>Artificial Intelligence</span></li>
@@ -95,8 +100,8 @@
 
                 </ol>
             </h1>
-            <p class="zoom">This is my personal portfolio. Scroll to find out everything about me!</p>
-            <button  id="scrollButton" class="zoom">Get started</button>
+            <p class="zoom textSubtitles">This is my personal portfolio. Scroll to find out everything about me!</p>
+            <button  id="scrollButton" class="zoom textSubtitles">Get started</button>
         </div>
     </section>
 
@@ -116,8 +121,8 @@
 
             <!-- Right: Text + Button -->
             <div class="about-content autoShow">
-                <h1 class>Some insights about me</h1>
-                <p>
+                <h1 class="textTitles">Some insights about me</h1>
+                <p class="textSubtitles">
                     I’m passionate about AI, data science, and designing thoughtful user experiences.
                     Learn more about me or grab my CV!
                 </p>
@@ -125,31 +130,38 @@
             </div>
 
         </div>
+  <!-- Skills passing banner -->
+    <div class="scroller" data-speed="fast">
+        <ul class="tag-list scroller__inner textSubtitles">
+            <li class="zoom">Python</li>
+            <li class="zoom">Java</li>
+            <li class="zoom">MySQL</li>
+            <li class="zoom">Html</li>
+            <li class="zoom">JavaScript</li>
+            <li class="zoom">Css</li>
+            <li class="zoom">R</li>
+            <li class="zoom">Matlab</li>
+
+            <li class="zoom">Python</li>
+            <li class="zoom">Java</li>
+            <li class="zoom">MySQL</li>
+            <li class="zoom">Html</li>
+            <li class="zoom">JavaScript</li>
+            <li class="zoom">Css</li>
+            <li class="zoom">R</li>
+            <li class="zoom">Matlab</li>
+        </ul>
+</div>
     </section>
 
-    <!-- Skills passing banner -->
+    <section class="section scroller-container">
 
-    <div class="scroller" data-speed="fast">
-  <ul class="tag-list scroller__inner">
-        <li class="zoom">Python</li>
-        <li class="zoom">Java</li>
-        <li class="zoom">MySQL</li>
-        <li class="zoom">Html</li>
-        <li class="zoom">JavaScript</li>
-        <li class="zoom">Css</li>
-        <li class="zoom">R</li>
-        <li class="zoom">Matlab</li>
+        
+    </section>
 
-        <li class="zoom">Python</li>
-        <li class="zoom">Java</li>
-        <li class="zoom">MySQL</li>
-        <li class="zoom">Html</li>
-        <li class="zoom">JavaScript</li>
-        <li class="zoom">Css</li>
-        <li class="zoom">R</li>
-        <li class="zoom">Matlab</li>
-  </ul>
-</div>
+  
+
+
 
 
 
@@ -158,14 +170,14 @@
     <section class="section sectionProjects autoShow">
 
         <div class="projectTitle">
-            <h1 class="autoShow zoom">What have I been up to?</h1>
+            <h1 class="autoShow zoom textTitles">What have I been up to?</h1>
         </div>
 
       <div class="card-group autoShow">
         <div class="card">
-             <img src="images/astronaut.jpg" >
+             <img src="images/programming.jpg" >
             <div class="layer">
-                <div class="info">
+                <div class="info textSubtitles">
                     <h1>Group work</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
                     <button class="zoom" >Explore</button>
@@ -173,9 +185,9 @@
             </div>
         </div>
         <div class="card">
-             <img src="images/diabetes.jpg" >
+             <img src="images/graduate.jpg" >
             <div class="layer">
-                <div class="info">
+                <div class="info textSubtitles">
                     <h1>Bachelors Thesis</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
                     <button class="zoom" >Explore</button>
@@ -183,9 +195,9 @@
             </div>
         </div>
          <div class="card">
-             <img src="images/astronaut.jpg" >
+             <img src="images/projects.jpg" >
             <div class="layer">
-                <div class="info">
+                <div class="info textSubtitles">
                     <h1>Group work</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
                     <button class="zoom" >Explore</button>
@@ -193,9 +205,9 @@
             </div>
         </div>
         <div class="card">
-             <img src="images/emma picture.jpg" >
+             <img src="images/astronaut.jpg" >
             <div class="layer">
-                <div class="info">
+                <div class="info textSubtitles">
                     <h1>Personal Projects</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dolorem provident, ipsa voluptatem molestiae reiciendis sequi modi veniam consectetur ipsam dignissimos, eum, omnis reprehenderit nemo facilis? Eos doloribus impedit eaque!</p>
                     <button class="zoom">Explore</button>
@@ -210,8 +222,8 @@
     <!-- Contact me section -->
       
     <section class= "section autoShow" id="contact">
-        <h2>Contact Me</h2>
-        <p>
+        <h2 class="textTitles">Contact Me</h2>
+        <p class="textBlocks">
             I’d love to hear from you! Whether you have a question, project idea, or just want to say hi, drop me a message below.
         </p>
         <form
@@ -222,7 +234,7 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <button class="textSubtitles" type="submit">Send Message</button>
         </form>
     </section>
 
@@ -232,8 +244,8 @@
     <!-- Footer section -->
 
    <footer>
-        <p>© 2025 Your Name. All rights reserved.</p>
-        <p>
+        <p class="textSubtitles">© 2025 Your Name. All rights reserved.</p>
+        <p class="textBlocks">
             <a href="#contact">Contact</a> | 
             <a href="#">Privacy Policy</a> | 
             <a href="#">Terms of Use</a>
