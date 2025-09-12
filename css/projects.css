@@ -1,11 +1,4 @@
-.sectionProjects {
-  background-color: rgba(255, 255, 255, 0.8);
-  position:relative;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
-}
+
 
 .projectTitle{
     position: relative;
