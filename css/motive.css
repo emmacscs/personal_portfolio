@@ -1,61 +1,70 @@
-
-
 .about-me-container {
   display: flex;
-  max-width: 1200px;
-  width: 100%;
+  width: 75%;
   gap: 2rem;
   align-items: center;
-  flex-wrap: wrap; /* Responsive */
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  margin-top: 10%;
+}
+
+/* Profile Photo */
+.about-photo {
+  flex: 0 0 35%; /* image takes ~1/3 on desktop */
+  display: flex;
+  justify-content: center;
 }
 
 .about-photo img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  width: 350px;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-photo img:hover{
-  
-  box-shadow: 0 0 10px #151840;
-  transform:scale(1.04);
+.about-photo img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 15px #151840;
 }
 
+/* Text Content */
 .about-content {
   flex: 1;
-  min-width: 280px;
+  min-width: 260px;
 }
 
 .about-content h1 {
   margin-top: 0;
   font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .about-content p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
+  font-size: 1.1rem;
+  margin: 1rem 0 1.5rem;
+  line-height: 1.6;
 }
 
+
+/* Button */
 .cv-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #9d8ced;
-
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
-  transition: transform 0.2s ease;
-
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cv-button:hover {
   background-color: #2ECCB0;
+  transform: scale(1.05);
   box-shadow: 0 0 10px #151840;
-  transform:scale(1.04);
 }
 
 
@@ -80,6 +89,7 @@
   max-width: 2000px;
   /* background-color: rgba(255, 255, 255, 0.5);*/
   height: 400px;
+  margin-top: 20%;
 }
 
 .scroller__inner {
@@ -127,5 +137,50 @@
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* ===================
+   Responsive tweaks
+   =================== */
+@media (max-width: 1024px) {
+  .about-photo {
+    flex: 0 0 30%; /* shrink image a bit on tablets */
+  }
+  .about-content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-photo {
+    flex: 0 0 auto;
+    width: 60%; /* smaller but still centered */
+  }
+  .about-photo img {
+    max-width: 250px;
+  }
+  .about-content h1 {
+    font-size: 2rem;
+  }
+  .about-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-photo {
+    width: 70%; /* shrink more on tiny screens */
+  }
+  .about-photo img {
+    max-width: 200px;
+  }
+  .cv-button {
+    width: 100%;
+    text-align: center;
   }
 }

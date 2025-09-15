@@ -6,7 +6,7 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  width: 95vw; /* allow it to extend more */
+  width: 95%; /* allow it to extend more */
 }
 
 /* Big initial heading */

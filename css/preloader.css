@@ -11,8 +11,9 @@
 
   /* Start fully centered */
   transform: translate(-50%, -50%);
-  
-  animation: loaderSlideUp 1.5s ease-in-out 2.1s forwards;
+
+  animation: loaderSlideUp 1.5s ease-in-out 2.1s forwards,
+             loaderPushLeft 1s ease-in-out 2.5s forwards; /* after slide-up */
 }
 
 @keyframes loaderSlideUp {
@@ -20,9 +21,17 @@
     top: 30px; /* Near top navbar */
     width: 40px;
     height: 40px;
-    transform: translate(-50%, 0); /* Align vertically without vertical offset */
+    transform: translate(-50%, 0); /* aligned vertically */
   }
 }
+
+@keyframes loaderPushLeft {
+  to {
+    left: 60px; /* adjust distance from left edge */
+    transform: translate(0, 0); /* no horizontal centering */
+  }
+}
+
 
 /*RECTANGLE COMPONENT*/
 

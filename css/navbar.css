@@ -1,6 +1,4 @@
-
-
- /* NAVBAR OVERLAY */
+/* NAVBAR OVERLAY */
 .overlay-navbar {
   position: fixed;
   top: 0;
@@ -24,21 +22,21 @@
   }
 }
 
-
-
- /* CONTENT OF NAVBAR */
-
+/* CONTENT OF NAVBAR */
 .navbar-content {
   height: 90px;
-  font-family: sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
   padding: 0 20px;
+  font-size: 1.1rem; /* base font size */
   animation: fadeInAfterDelay 1s ease forwards;
   animation-delay: 3s;
 }
-
 
 @keyframes fadeInAfterDelay {
   to {
@@ -58,4 +56,31 @@
   border-radius: 6px;
 }
 
+/* ====================
+   Responsive Font Sizes
+   ==================== */
+@media (max-width: 1024px) {
+  .navbar-content {
+    font-size: 1.2rem;
+  }
+}
 
+@media (max-width: 768px) {
+  .navbar-content {
+    font-size: 1rem;
+  }
+  .nav-left,
+  .nav-right {
+    gap: 10px; /* tighten spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-content {
+    font-size: 0.8rem;
+  }
+  .nav-left,
+  .nav-right {
+    gap: 8px; /* smaller gap for phones */
+  }
+}
