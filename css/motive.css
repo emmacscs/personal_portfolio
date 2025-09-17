@@ -4,7 +4,7 @@
   gap: 2rem;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 2rem 1rem;
   margin-top: 10%;
 }
@@ -152,35 +152,19 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .about-me-container {
     flex-direction: column;
     text-align: center;
+    margin-top: 50%; /* push further down */
   }
-  .about-photo {
-    flex: 0 0 auto;
-    width: 60%; /* smaller but still centered */
-  }
-  .about-photo img {
-    max-width: 250px;
-  }
-  .about-content h1 {
-    font-size: 2rem;
-  }
-  .about-content p {
-    font-size: 1rem;
-  }
+
+  
 }
 
 @media (max-width: 480px) {
-  .about-photo {
-    width: 70%; /* shrink more on tiny screens */
-  }
-  .about-photo img {
-    max-width: 200px;
-  }
-  .cv-button {
-    width: 100%;
-    text-align: center;
+  .about-me-container {
+    margin-top: 60%; /* push even further down on tiny screens */
   }
 }

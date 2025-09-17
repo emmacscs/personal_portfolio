@@ -67,3 +67,27 @@
     0%   { transform: translateY(0); }
     100% { transform: translateY(-500%); }
   }
+
+  /* Tablets */
+@media (max-width: 768px) {
+  .wrapper .initial-content {
+    font-size: 50px; /* heading smaller */
+  }
+  .wrapper .initial-content ol {
+    font-size: 20px; /* much smaller */
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .wrapper .initial-content {
+    font-size: 30px; /* compact heading */
+  }
+  .wrapper .initial-content ol {
+    font-size: 14px; /* very small list text */
+    height: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
