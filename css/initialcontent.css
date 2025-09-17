@@ -68,26 +68,26 @@
     100% { transform: translateY(-500%); }
   }
 
-  /* Tablets */
+/* Tablets */
 @media (max-width: 768px) {
   .wrapper .initial-content {
-    font-size: 50px; /* heading smaller */
+    font-size: 60px; /* larger heading */
   }
   .wrapper .initial-content ol {
-    font-size: 20px; /* much smaller */
-    height: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 24px; /* bigger list text */
+    height: 3rem;
+    line-height: 3rem;
   }
 }
 
 /* Phones */
 @media (max-width: 480px) {
   .wrapper .initial-content {
-    font-size: 30px; /* compact heading */
+    font-size: 40px; /* bigger heading */
   }
   .wrapper .initial-content ol {
-    font-size: 14px; /* very small list text */
-    height: 1.8rem;
-    line-height: 1.8rem;
+    font-size: 18px; /* larger list text */
+    height: 2.2rem;
+    line-height: 2.2rem;
   }
 }
