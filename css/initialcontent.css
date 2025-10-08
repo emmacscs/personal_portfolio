@@ -83,7 +83,7 @@
 /* Phones */
 @media (max-width: 480px) {
   .wrapper .initial-content {
-    font-size: 70px; /* bigger heading */
+    font-size: 52px; /* bigger heading */
   }
   .wrapper .initial-content ol {
     font-size: 18px; /* larger list text */
